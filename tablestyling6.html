@@ -1,0 +1,120 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width,initial-scale=1.0">
+        <title>list style position</title>
+        <style>
+            table{
+                width:85%;
+                border:3px solid crimson;
+                border-spacing: 10px;
+                border-collapse: collapse;
+                border-collapse: separate;
+            }
+           th,td{
+               border:1px solid crimson;
+               padding:5px;
+               
+           }
+           #time{
+               background-color:cadetblue;
+               text-transform:uppercase;
+               color:wheat;
+           }
+           .left{
+               text-align:center;
+           }
+        </style>
+    </head>
+    <body>
+        <h1>Table styling</h1>
+        <h2>Time table</h2>
+        <table>
+            <tr>
+                <th rowspan="2">Day</th>
+                <th id="time" colspan="11">Time</th>
+            </tr>
+            <tr>
+               
+                <th>9-9:45</th>
+                <th>9:45-10:30</th>
+                <th rowspan="7">Recess</th>
+                <th>10:45-11:30</th>
+                <th>11:30-12:15</th>
+                <th rowspan="7">Lunch</th>
+                <th>1:15-2:00</th>
+                <th>2:00-2:45</th>
+                <th rowspan="7">Recess</th>
+                <th>3:00-3:45</th>
+                <th>3:45-4:30</th>
+            </tr>
+            <tr>
+                <th class="left">Monday</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th class="left">Tuesday</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th class="left">Wednesday</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th class="left">Thursday</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th class="left">Friday</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th class="left">Saturday</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        
+    </body>
+</html>

@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>forms</title>
+        <style>
+            fieldset{
+                border:3px solid crimson;
+                margin-bottom:25px;
+                border-radius: 15px;
+                padding-left: 40px;;
+            }
+            legend{
+                background-color:aquamarine;
+                padding:5px;
+                border-radius: 5px;
+                margin-left: -30px;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <fieldsets>
+                <legend>Login details</legend>
+                <p>
+                    <label for="user-name">User name:</label><br>
+                    <input type="text" name="user-name" id="user-name">
+                </p>
+                <p>
+                    <label for="e-mail">Email:</label><br>
+                    <input type="email" name="e-mail" id="e-mail">
+                </p>
+                <p>
+                    <label for="pass-word">Password:</label><br>
+                    <input type="password" name="pass-word" id="pass-word">
+                </p>
+                <p>
+                    <label for="confirm-pass">Confirm password</label><br>
+                    <input type="password" name="confirm-pass" id="confirm-pass">
+                </p>
+            </fieldsets>
+
+            <fieldsets>
+                <legend>Education details</legend>
+                <p>
+                    <label for="qualification">Qualification</label><br>
+                    <input type="text" name="qualification" id="qualification">
+                </p>
+                <p>
+                    <label for="college-name">college name:</label><br>
+                    <input type="text" name="college-name" id="college-name">
+                </p>
+                <p>
+                    <label for="year-pass">Year passed:</label><br>
+                    <input type="text" name="year-pass" id="year-pass">
+                </p>
+               
+            </fieldsets>
+            <p>
+                <input type="submit" value="save" name="label-form">
+            </p>
+        </form>
+    </body>
+</html>

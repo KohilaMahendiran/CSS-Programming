@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Attribute selector</title>
+        <style>
+            [title]{
+                color:crimson;
+            }
+            a[href^="https"]{
+                color:darkkhaki;
+            }
+            a[target="_blank"]{
+                color:darkgreen;
+            }
+            img[alt*="icon"]{
+                display:inline-block;
+                border:3px solid darkblue;
+                padding:5px;
+            }
+            img[alt~="icon"]{
+                display:inline-block;
+                border:3px solid darkgreen;
+                padding:5px;
+            }
+            a[href$=".pdf"]{
+                background: url('humai.png') no-repeat center right;
+                padding-right:15px;
+            }
+            a[href$=".doc"]{
+                background: url('humai.png') no-repeat center right;
+                padding-right:15px;
+            }
+            span[class*="small"]{
+                font-size: .5rem;
+            }
+            a#dummy:link{
+                color:coral;
+            }
+            a#dummy:visited{
+                color:cornflowerblue;
+            }
+            a#dummy:hover{
+                color:blueviolet;
+            }
+            a#dummy:active{
+                color:brown;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="page">
+            <h1>CSS Selector types</h1>
+            <p><acronym title="Indian Space Research Organisation">ISRO</acronym> is an acronym for Indian Space Research Organisation.<abbr title="Professor">Prof.</abbr> is an abbreviation for "Professor"</p>
+            <p>These links are either external links or will open in new tab.<a>Google</a> and <a>Facebook</a> are big companies</p>
+            <p>Icons such as <img src="humai.png" alt="icon-humai">,<img src="humai.png" alt="icon-humai"> are displayed in the dark blue box</p>
+            <p>Icons such as <img src="humai.png" alt="icon humai">,<img src="humai.png" alt="icon humai"> are displayed in the dark green box</p>
+            <p>Download <a>Table of content</a> and <a>Worksheet</a></p>
+            <p><a href="https://www.google.com">Google</a> and <a href="http://www.facebook.com" target="_blank">Facebook</a> are meant to change <span class="bluesmallletter">(how the)</span>world <span class="redsmallalphabets">(spends money)</span></p>
+            <p><a id="dummy" href='#'>Dummy link</a></p>
+        </div>
+    </body>
+</html>
